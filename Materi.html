@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Text input fields</h2>
+    <form action="/action_page.php" method="get">
+
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" required><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname"><br>
+    <label for="age"> Age: </label><br> <!--for berelasi dengan id-->
+    <input type="search" id="age" name="age">
+    </form>
+    <label for="alamat"> Alamat : </label> <br>
+    <textarea name="alamat" rows="10" cols="30" id="alamat">
+        Jalan 123 
+        </textarea>
+    <p>Note that the form itself is not visible.</p>
+    <p>Also note that the default width of text input fields is 20 characters.abcdefghijkl</p>
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+    </select> <br>
+    <input type="submit"> <br>
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+    <form action="/action_page.php" method="post"><br>
+        <!-- required(harus diisi) autofocus(ada kursor)-->
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" required autofocus><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <!--placeholder-->
+    <form>
+    <label for="phone">Enter a phone number:</label>
+    <input type="tel" id="phone" name="phone"
+    placeholder="123-45-678"
+    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+    </form>
+    <!--size-->
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" size="50"><br>
+        <label for="pin">PIN:</label><br>
+        <input type="text" id="pin" name="pin" size="4">
+       </form>
+       <!--gabisa dimanipulasi,-->
+       <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John" disabled><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe">
+       </form>
+       <!--required-->
+       <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+       </form>
+       <svg width="200" height="200">
+        <rect width="200" height="200"
+       style="fill:rgb(173, 234, 180);stroke-width:10;stroke: #000;" />
+       </svg>
+       
+       <canvas id="myCanvas" width="400" height="200"></canvas>
+
+       <svg width="200" height="200">
+        <circle cx="50" cy="50" r="40" stroke="red" stroke-width="2"
+       fill="orange">
+       </svg> 
+
+</body>
+</html>

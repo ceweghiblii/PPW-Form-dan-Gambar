@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    .header{
+        display: flex; align-items: center;
+    }
+    nav ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul li {
+        margin-right: 10px;
+        text-align: center;
+    }
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+
+    <div class="header">
+    <img src="snbp logo.jpeg" style="width: 64px; height: auto; margin-right: 10px;">
+    <h3> Form Pendaftaran SNBP 2024</h3>
+    <nav>
+    <ul>
+        <li><a href="#datadiri">Data Diri</a></li>
+        <li><a href="#rata2nilai">Rata-rata Nilai</a></li>
+        <li><a href="#berkas">Unggah Berkas</a></li>
+        <li><a href="#prodi">Pemilihan Prodi</a></li>
+    </ul>
+    </nav>
+    </div>
+</head>
+<body>
+   
+    <form>
+    <fieldset>
+        
+        <legend id="datadiri">Data Diri</legend>
+        <img src="foto.jpeg" width="auto"; height="120"; 
+        style="margin-top: 10px; margin-bottom: 10px;">
+        <br>
+        <label for="fname">Nama lengkap:</label> <br>
+        <input type="text" id="fname" name="fname" required><br><br>
+
+        <label for="nisn">NISN: </label> <br>
+        <input type="int" id="nisn" name="insn" required><br><br>
+
+        <label for="tl">Tanggal lahir:</label><br>
+        <input type="date" id="tl" name="tl" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="telp">No telp:</label><br>
+        <input type="tel" id="telp" name="telp" placeholder="123-45-678"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+
+        <label for="alamat">Domisili:</label><br>
+        <textarea name="alamat" rows="10" cols="30" id="alamat" required>    
+        </textarea><br><br>
+
+        <label for="asek">Asal sekolah:</label><br>
+        <input type="text" id="asek" name="asek" required><br><br>
+
+        <label for="npsn">NPSN Sekolah: </label><br>
+        <input type="int" id="npsn" name="npsn" required><br><br>
+    </fieldset> 
+
+        <fieldset>
+        <legend id="rata2nilai">Rata-rata Nilai Rapor</legend>
+        <label for="mtk">Matematika</label><br>
+        <input type="number" id="mtk" name="mtk" min="0" max="100" required><br><br>
+        <label for="bio">Biologi</label><br>
+        <input type="number" id="bio" name="bio" min="0" max="100" required><br><br>
+        <label for="phy">Fisika</label><br>
+        <input type="number" id="phy" name="phy" min="0" max="100" required><br><br>
+        <label for="chem">Kimia</label><br>
+        <input type="number" id="chem" name="chem" min="0" max="100" required><br><br>
+        </fieldset>
+  
+        <fieldset>
+        <legend id="berkas">Unggah berkas</legend>
+        <label for="pf">Portofolio</label><br>
+        <input type="file" id="pf" name="pf"><br><br>
+
+        <label for="">Hasil Tes Kesehatan</label><br>
+        <input type="file" id="teskes" name="teskes" required><br><br>
+    </fieldset>
+  
+        <fieldset>
+        <legend id="prodi">Pemilihan Program Studi</legend>
+        <p>Pilihan pertama</p>
+
+        <label for="univ1">Masukan universitas tujuan:</label><br>
+        <select id="univ1" name="pilihUniv" required>
+            <option value="ugm">Universitas Gadjah Mada</option>
+            <option value="ui">Universitas Indonesia</option>
+            <option value="undip">Universitas Diponegoro</option>
+            <option value="its">Institut Teknologi Sepuluh Nopember</option>
+            <option value="itb">Institut Teknologi Bandung</option>
+        </select>
+        <br><br>
+        <label for="pil1">Masukan program studi tujuan:</label><br>
+        <select  name="pil1" id="pil1" required>
+            <optgroup label="S1">
+                <option value="s1">Farmasi</option>
+                <option value="s2">Teknik Industri</option>
+                <option value="s3">Teknologi Informasi</option>
+                <option value="s4">Keperawatan</option>
+                <option value="s5">Ilmu Komputer</option>
+                <option value="s6">Ilmu Komunikasi</option>
+                <option value="s7">Elektronika dan Instrumentasi</option>
+                <option value="s8">Peternakan</option>    
+            </optgroup>
+
+            <optgroup label="D4">
+                <option value="d1">Teknologi Rekayasa Perangkat Lunak</option>
+                <option value="d2">Bahasa Inggris</option>
+                <option value="d3">Perbankan</option>
+                <option value="d4">Teknologi Rekayasa Elektro</option>
+                <option value="d5">Teknologi Rekayasa Mesin</option>
+            </optgroup> 
+            </select>
+
+        <p>Pilihan kedua</p>
+        <label for="univ2">Masukan universitas tujuan:</label><br>
+        <select id="univ2" name="pilihUniv">
+            <option value="ugm">Universitas Gadjah Mada</option>
+            <option value="ui">Universitas Indonesia</option>
+            <option value="undip">Universitas Diponegoro</option>
+            <option value="its">Institut Teknologi Sepuluh Nopember</option>
+            <option value="itb">Institut Teknologi Bandung</option>
+        </select>
+        <br> <br>
+        <label for="pil2">Masukan program studi tujuan:</label><br>
+        <select  name="pil2" id="pil2">
+            <optgroup label="S1">
+                <option value="s1">Farmasi</option>
+                <option value="s2">Teknik Industri</option>
+                <option value="s3">Teknologi Informasi</option>
+                <option value="s4">Keperawatan</option>
+                <option value="s5">Ilmu Komputer</option>
+                <option value="s6">Ilmu Komunikasi</option>
+                <option value="s7">Elektronika dan Instrumentasi</option>
+                <option value="s8">Peternakan</option>
+                
+            </optgroup>
+            <optgroup label="D4">
+                <option value="d1">Teknologi Rekayasa Perangkat Lunak</option>
+                <option value="d2">Bahasa Inggris</option>
+                <option value="d3">Perbankan</option>
+                <option value="d4">Teknologi Rekayasa Elektro</option>
+                <option value="d5">Teknologi Rekayasa Mesin</option>
+            </optgroup> 
+            </select>
+    </fieldset>
+    <input type="checkbox" value="tnk" style="margin: 10px;" required>
+    Dengan ini saya menyetujui persyaratan dalam pendaftaran SNBP <br>
+    <input type="submit" value="Submit" style="margin: 10px; width: 64px;">
+    </form> 
+</body>
+</html>

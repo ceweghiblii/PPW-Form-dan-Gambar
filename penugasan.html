@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Biography</legend>
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname"><br><br>
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname"><br><br>
+          <label for="email">Email:</label> 
+          <input type="email" id="email" name="email"><br><br>
+          <label for="t">Place of birth:</label>
+          <input type="text" id="t" name="t"><br><br>
+          <label for="birthday">Date of birth:</label>
+          <input type="date" id="birthday" name="birthday"><br><br>
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>
+
+    <br>
+
+    <label for="colors">Choose your favourite colour:</label>
+    <input list="colorss" name="colors" id="colors">
+    <datalist id="colorss">
+    <option value="Red">
+    <option value="Blue">
+    <option value="Yellow">
+    <option value="Green">
+    <option value="Pink">  
+    <option value="Black"> 
+    </datalist>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p> Let's try this</p>
+    <form oninput="x.value=parseInt(a.value) / parseInt(b.value)">
+        <input type="range" id="a" value="50">
+        : <input type="number" id="b" value="25">
+        =<output name="x" for="a b"></output> 
+        <br>
+        <br>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" value="Dea" disabled><br><br>
+        <br>
+        <br>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" value="Dea" readonly><br><br>
+    </form>
+    <br>
+
+    <label for="Flavour">Choose a flavour:</label>
+
+    <select id="Flavour">
+    <option value="Chocolate">Chocolate</option>
+    <option value="Strawbery">Strawbery</option>
+    <option value="Matcha">Matcha</option>
+    <option value="Tiramisu">Tiramisu</option>
+    </select>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <label for="Ice cream">Choose a Ice cream:</label>
+    <select  name="Ice cream" id="Ice cream">
+    <optgroup label="Cone">
+        <option value="1">1 Scope</option>
+        <option value="2">2 Scope</option>
+    </optgroup>
+    <optgroup label="Cup">
+        <option value="3">3 Scope</option>
+        <option value="4">4 Scope</option>
+    </optgroup> 
+    </select>
+</body>
+</html>
+
